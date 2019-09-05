@@ -15,7 +15,7 @@ File 2: Coinbase minute by minute data in json format. (~2million rows x 8 Colum
 
 ### Analytics Schema
 
-![Schema] (https://github.com/ridicholas/Udacity-Dend-Capstone/blob/master/Schema.png)
+![Schema](https://github.com/ridicholas/Udacity-Dend-Capstone/blob/master/Schema.png)
 
 
 
