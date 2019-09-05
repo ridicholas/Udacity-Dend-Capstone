@@ -57,6 +57,26 @@ I checked whether the rows of the tables had appropriate counts as compared to t
 
 Finally, I wanted to see if this process was actually useful. I put myself in the shoes of the target audience analytics team and queried from the analytics tables in order to answer the analytics questions posed earlier. 
 
+### Future Data Updates
+
+This was taken from a static data source, but theoretically, this dataset should be updated regularly assuming such data was available. Since we are looking at minute by minute data, if it was available we should be updating this dataset as frequently as we want to be analyzing it. In order to do that, we would need to provide additional code to only append new values from the source rather than recreating the entire dataset each time. 
+
+### Scenario Questions
+
+How you would approach the problem differently under the following scenarios:
+
+If the data was increased by 100x.
+  
+  If the dataset was increased by 100x we could largely keep the process the same since Spark is a great tool for processing giant datasets. We might want to spin up a more powerful EMR cluster in order to handle a 100x bigger dataset (increase the number of cores and perhaps consider an optimized EMR cluster, depending on if we care more about storage or more about computing power). 
+
+If the pipelines were run on a daily basis by 7am.
+  
+  I made this in Jupyter Notebook from my point of view as an analyst. However, if we wanted this to be a more production level pipeline that needs to be run at 7am each day, we can convert the Jupyter notebook to a python script and send that directly to the emr instance to run every day at 7am. 
+
+
+If the database needed to be accessed by 100+ people.
+  If the dataset needed to be accessed by 100+ more people there should not really be a problem pulling it from S3. We might want to consider transferring it to the EMR HDFS database to make things a bit quicker. 
+
 
 
 
