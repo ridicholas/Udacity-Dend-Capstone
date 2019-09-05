@@ -10,9 +10,12 @@ In this project I ETL a massive bitcoin historical transaction dataset into an a
 ### Source Data
 
 File 1: Bitstamp minute by minute data in csv format. (~4million rows x 8 Columns)
+
 File 2: Coinbase minute by minute data in json format. (~2million rows x 8 Columns). 
 
 ### Analytics Schema
+
+![Schema] (https://github.com/ridicholas/Udacity-Dend-Capstone/blob/master/Schema.png)
 
 
 
